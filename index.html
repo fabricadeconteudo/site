@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica de Conteúdo - Excelência e Inovação</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Carrega o Tailwind CSS para um design clean e minimalista -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração da fonte Inter (padrão) e paleta de cores customizada -->
+</head>
+
+<body class="antialiased text-gray-800">
+
+    <!-- 1. Navegação Minimalista (Estilo Fixo e Transparente da Apple) -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl backdrop-saturate-150 bg-white/80 border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Logo (Tipografia limpa e cor de destaque) -->
+            <div class="text-xl font-bold tracking-tight">
+                <a href="#" class="text-gray-900 hover:text-gray-600 transition duration-300">
+                    <span class="color-primary">Fábrica de Conteúdo
+                </a>
+            </div>
+
+            <!-- Menu Principal (Desktop) - Foco na hierarquia e simplicidade -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html"
+                    class="color-primary font-semibold border-b-2 border-primary transition duration-300">Home</a>
+                <a href="academia_digital.html"
+                    class="text-gray-700 hover:text-gray-900 transition duration-300">Academia Digital</a>
+                <a href="design_grafico.html" class="text-gray-700 hover:text-gray-900 transition duration-300">Design
+                    Gráfico</a>
+                <a href="audiovisual.html"
+                    class="text-gray-700 hover:text-gray-900 transition duration-300">Audiovisual</a>
+                <a href="analise_de_dados.html"
+                    class="text-gray-700 hover:text-gray-900 transition duration-300">Análise de Dados</a>
+            </div>
+
+            <!-- Ações e Área Restrita (Login) - Botão CTA de alto contraste e ícone discreto -->
+            <div class="flex items-center space-x-4">
+                <a href="https://fabricadeconteudo.github.io/dashboard/index.html" target="_blank"
+                    class="px-4 py-1.5 text-sm font-semibold bg-primary text-white rounded-full hover:bg-opacity-90 transition duration-300 shadow-md shadow-primary/30">
+                    Acessar Dashboard
+                </a>
+                <!-- Ícone de Login/Área Restrita (8) - Minimalista e intuitivo -->
+                <!-- <a href="#login" class="text-gray-700 hover:text-gray-900 transition duration-300 p-2 rounded-full hover:bg-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </a> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 1.1. Home - Seção Hero com Slider (Imagem Grande, Full-width) -->
+        <section id="hero-slider" class="relative w-full h-[100vh] overflow-hidden">
+
+            <!-- Container dos Slides (posicionamento absoluto para sobreposição) -->
+            <div id="slides-container" class="absolute inset-0">
+
+                <!-- Slide 1: Foco em Pesquisa (Cuidado e Inovação) -->
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide-index="0">
+                    <!-- Placeholder de Imagem de Fundo (Simula uma imagem grande e clean) -->
+                    <div class="slide-bg absolute inset-0"
+                        style="background-image: linear-gradient(rgba(51,51,51,0.5), rgba(51,51,51,0.5)), url('hero.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <!-- Overlay de Conteúdo (Texto centralizado e super grande) -->
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center">
+                        <div class="max-w-4xl px-4">
+                            <h1
+                                class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-none text-white mb-4">
+                                <span class="block text-white/90">Inovação e a </span>Ciência do Cuidado
+                            </h1>
+                            <p class="text-xl text-gray-200 max-w-3xl mx-auto mb-8 font-light">
+                                O centro de excelência em saúde, pesquisa e conhecimento
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Foco em Formação/Academia Digital -->
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide-index="1">
+                    <div class="slide-bg absolute inset-0"
+                        style="background-image: linear-gradient(rgba(51,51,51,0.5), rgba(51,51,51,0.5)), url('hero2.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center">
+                        <div class="max-w-4xl px-4">
+                            <h1
+                                class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-none text-white mb-4">
+                                Formação que Transforma.
+                            </h1>
+                            <p class="text-xl text-gray-200 max-w-3xl mx-auto mb-8 font-light">
+                                Acesse a Academia Digital e o Playbook de Produção
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Foco em Serviços/Central de Solicitações -->
+                <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" data-slide-index="2">
+                    <div class="slide-bg absolute inset-0"
+                        style="background-image: url('hero3.png'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center">
+                        <div class="max-w-4xl px-4">
+                            <h1
+                                class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-none text-white mb-4">
+                                <span class="block text-white/90">Centralize Seus Pedidos
+                            </h1>
+                            <p class="text-xl text-gray-200 max-w-3xl mx-auto mb-8 font-light">
+                                Design, Audiovisual e Análise de Dados em um só lugar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles de Navegação (Esquerda/Direita) - Estilo discreto -->
+            <button id="prev-btn"
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/0 text-white rounded-full hover:bg-white/50 transition duration-300 z-10 hidden sm:block">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-0 w-0" fill="none" viewBox="0 0 0 0"
+                    stroke="currentColor" stroke-width="0">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="next-btn"
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/0 text-white rounded-full hover:bg-white/50 transition duration-300 z-10 hidden sm:block">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-0 w-0" fill="none" viewBox="0 0 0 0"
+                    stroke="currentColor" stroke-width="0">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <!-- Indicadores (Dots) - Feedback visual minimalista -->
+            <div id="dots-container" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+                <!-- Dots serão gerados via JS -->
+            </div>
+        </section>
+
+        <!-- 2. Áreas Departamentais - Cards Minimalistas (design clean e fácil de escanear) -->
+        <!-- O padding superior foi reduzido para compensar o slider de altura grande -->
+        <section id="areas" class="py-48 pt-48">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold tracking-tight text-center mb-16">Nossas Áreas de Excelência</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Card 2.1. Academia Digital -->
+                    <div
+                        class="bg-area-card p-6 rounded-2xl border border-area-card shadow-lg hover:shadow-xl transition duration-300">
+                        <!-- Ícone colorido sutilmente -->
+                        <div class="p-3 mb-4 rounded-full inline-block bg-primary/10 color-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                <path d="M6.5 2H20v20h-4.5" />
+                                <line x1="10" y1="6" x2="14" y2="6" />
+                                <line x1="10" y1="10" x2="14" y2="10" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Academia Digital</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Cursos, Playbooks de Produção e Materiais de Boas Práticas
+                            para desenvolvimento contínuo.</p>
+                        <!-- Link de texto simples com cor de destaque -->
+                        <a href="academia_digital.html"
+                            class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                            Acessar Área
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 2.2. Design Gráfico -->
+                    <div
+                        class="bg-area-card p-6 rounded-2xl border border-area-card shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="p-3 mb-4 rounded-full inline-block bg-primary/10 color-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 21.5V13M12 13V2.5M12 13H2M12 13H22M19 10C17.6 10 16.5 8.9 16.5 7.5S17.6 5 19 5s2.5 1.1 2.5 2.5S20.4 10 19 10zM5 10C3.6 10 2.5 8.9 2.5 7.5S3.6 5 5 5s2.5 1.1 2.5 2.5S6.4 10 5 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Design Gráfico</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Portfólio Visual, Brand Center e Kits para criação de
+                            peças com excelência e padrão Einstein.</p>
+                        <a href="design_grafico.html"
+                            class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                            Acessar Área
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 2.3. Audiovisual -->
+                    <div
+                        class="bg-area-card p-6 rounded-2xl border border-area-card shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="p-3 mb-4 rounded-full inline-block bg-primary/10 color-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="6" width="18" height="12" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <line x1="17" y1="3" x2="17" y2="6"></line>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Audiovisual</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Portfólio de Vídeos, Templates de Roteiro e assets para
+                            produções de alta qualidade.</p>
+                        <a href="audiovisual.html"
+                            class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                            Acessar Área
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 2.4. Análise de Dados -->
+                    <div
+                        class="bg-area-card p-6 rounded-2xl border border-area-card shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="p-3 mb-4 rounded-full inline-block bg-primary/10 color-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="M18.7 8.7L12 15.4 9.3 12.7 6 16" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Análise de Dados</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Estudos, Insights e Relatórios Publicados para embasamento
+                            de decisões estratégicas.</p>
+                        <a href="analise_de_dados.html"
+                            class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                            Acessar Área
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section><div class="banner" style="background-image: url('banner1.jpg'); background-size: cover; background-position: center;"></div></section>
+
+        <!-- 6. Central de Solicitações (CTA de Destaque - Bloco Simples e Focado) -->
+        <section id="solicitacoes" class="py-48 bg-gray-50/70">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold tracking-tight mb-4">Centralize suas solicitações</h2>
+                <p class="text-lg text-gray-500 mb-8">
+                    Precisa de uma peça de design, uma gravação audiovisual ou uma análise de KPIs?<br>Utilize nossa <span class="color-primary font-bold">Central de Solicitações</span> para enviar sua solicitação de forma rápida e organizada.
+                </p>
+                <!-- Botão CTA de alto impacto (Apple style) -->
+                <a href="#"
+                    class="inline-block px-10 py-4 text-xl font-bold text-white bg-primary rounded-xl hover:bg-opacity-90 transition duration-300 shadow-2xl shadow-primary/50 transform hover:scale-[1.02] active:scale-[0.98]">
+                    Saiba mais
+                </a>
+            </div>
+        </section>
+
+        <section><div class="banner" style="background-image: url('banner2.jpg'); background-size: cover; background-position: center;"></div></section>
+       
+        <!-- 3. Projetos, 4. Portfólio, 5. Biblioteca (Seção Agregadora - Cards simples e informativos) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-48">
+            <h2 class="text-4xl font-bold tracking-tight text-center mb-16">Conhecimento, Projetos e Resultados</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Projetos (3) -->
+                <div id="projetos" class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
+                    <h3 class="text-2xl font-semibold color-primary mb-3">Cases de Sucesso</h3>
+                    <p class="text-gray-600 mb-4">Nossos Casos de Sucesso em Detalhe. Explore o Portfólio Geral e os
+                        resultados alcançados.</p>
+                    <a href="#"
+                        class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                        Ver Lista Completa
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Portfólio (4) -->
+                <div id="portfolio" class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
+                    <h3 class="text-2xl font-semibold color-primary mb-3">Calendário</h3>
+                    <p class="text-gray-600 mb-4">Veja a Listagem Geral e o Detalhe dos projetos em andamento ou
+                        concluídos, garantindo a transparência.</p>
+                    <a href="#"
+                        class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                        Ver Casos de Sucesso
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Biblioteca (5) -->
+                <div id="biblioteca" class="p-6 rounded-2xl bg-white border border-gray-100 shadow-md">
+                    <h3 class="text-2xl font-semibold color-primary mb-3">Biblioteca da Fábrica</h3>
+                    <p class="text-gray-600 mb-4">Acesse a Biblioteca Geral, navegue por Categorias e encontre
+                        rapidamente o Item da Biblioteca que precisa.</p>
+                    <a href="#"
+                        class="text-sm font-medium color-primary hover:text-blue-700 transition duration-300 flex items-center">
+                        Acessar Base de Conhecimento
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. Institucional - Rodapé (Footnote - Links e informações secundárias) -->
+    <footer class="py-12 border-t border-gray-200 bg-footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold tracking-tight mb-3">
+                        <a href="index.html" class="color-secondary hover:text-blue-700 transition duration-300">Fábrica de Conteúdo</a>
+                    </h4>
+                    <p class="text-sm text-footer">Humanização, excelência e<br> o futuro da saúde.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold color-secondary tracking-wider mb-3">Áreas</h4>
+                    <ul class="space-y-2 text-sm text-footer">
+                        <li><a href="academia_digital.html" class="hover:text-primary transition duration-300">Academia Digital</a></li>
+                        <li><a href="design_grafico.html" class="hover:text-primary transition duration-300">Design Gráfico</a></li>
+                        <li><a href="audiovisual.html" class="hover:text-primary transition duration-300">Audiovisual</a></li>
+                        <li><a href="analise_de_dados.html" class="hover:text-primary transition duration-300">Análise de Dados</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold color-secondary tracking-wider mb-3">Institucional</h4>
+                    <ul class="space-y-2 text-sm text-footer">
+                        <li><a href="#" class="hover:text-primary transition duration-300">Sobre</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Contato</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Área Restrita</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold color-secondary tracking-wider mb-3">Suporte</h4>
+                    <ul class="space-y-2 text-sm text-footer">
+                        <li><a href="#solicitacoes" class="hover:text-primary transition duration-300">Central de Solicitações</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Dashboards</a></li>
+                        <li><a href="#" class="hover:text-primary transition duration-300">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200 text-center text-xs text-gray-400">
+                &copy; 2025 Fábrica de Conteúdo. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const dotsContainer = document.getElementById('dots-container');
+        let currentSlide = 0;
+        let slideInterval;
+        const autoSlideDuration = 6500; // 6 segundos e meio
+
+        // 1. Inicializa o Slider e Dots
+        function initializeSlider() {
+            slides.forEach((slide, index) => {
+                // Cria os indicadores (dots)
+                const dot = document.createElement('button');
+                dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-white/0', 'hover:bg-white', 'transition', 'duration-300');
+                dot.setAttribute('data-index', index);
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                    resetAutoSlide();
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            // Adiciona eventos aos botões
+            prevBtn.addEventListener('click', () => {
+                changeSlide(-1);
+                resetAutoSlide();
+            });
+            nextBtn.addEventListener('click', () => {
+                changeSlide(1);
+                resetAutoSlide();
+            });
+
+            // Mostra o primeiro slide e inicia a rotação automática
+            showSlide(currentSlide);
+            startAutoSlide();
+        }
+
+        // 2. Função para mostrar o slide
+        function showSlide(index) {
+            // Garante que o índice esteja dentro dos limites
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            // Oculta todos os slides e remove a classe 'active' dos dots
+            slides.forEach(slide => slide.classList.remove('opacity-100'));
+            const dots = dotsContainer.querySelectorAll('button');
+            dots.forEach(dot => dot.classList.remove('bg-white', 'scale-110'));
+
+            // Mostra o slide atual e marca o dot correspondente
+            slides[currentSlide].classList.add('opacity-100');
+            dots[currentSlide].classList.add('bg-white', 'scale-110');
+        }
+
+        // 3. Função para mudar o slide (próximo/anterior)
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        // 4. Funções para rotação automática
+        function startAutoSlide() {
+            slideInterval = setInterval(() => {
+                changeSlide(1);
+            }, autoSlideDuration);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(slideInterval);
+            startAutoSlide();
+        }
+
+        // Inicia o slider quando o DOM estiver pronto
+        document.addEventListener('DOMContentLoaded', initializeSlider);
+    </script>
+</body>
+
+</html>
