@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F8F8;
+    /* Um branco suave para o fundo, maximizando o whitespace */
+}
+
+/* Cor de destaque baseada na excelência e saúde, usada com moderação */
+.color-primary {
+    color: #007AFF;
+    /* Azul moderno/Saúde (semelhante ao tom da Apple) */
+}
+
+.color-secondary {
+    color: #41f1cb;
+    /* Azul moderno/Saúde (semelhante ao tom da Apple) */
+}
+
+.bg-primary {
+    background-color: #007AFF;
+}
+
+.bg-area-card {
+    background-color: #FFFFFF;
+}
+
+.border-area-card {
+    border-color: #EAEAEA;
+    /* Borda cinza clara para definir cards */
+}
+
+.bg-footer {
+    background-color: #454545;
+}
+
+.text-footer {
+    color: #fff;
+}
+
+/* Estilo para garantir que o slider ocupe uma grande parte da tela */
+.slide-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    width: 100%;
+    height: 450px;
+}
+
+.grid {
+    justify-items: center;
+}
